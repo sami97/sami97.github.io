@@ -52,7 +52,7 @@ const statsObserver = new IntersectionObserver((entries) => {
       const nums = entry.target.querySelectorAll('.stat-num');
       nums.forEach(num => {
         const text = num.textContent.trim();
-        const match = text.match(/^([\d.]+)(\+?)$/);
+        const match = text.match(/^([\d.]+)([+%]?)$/);
         if (match) {
           const val = parseFloat(match[1]);
           const span = num.querySelector('span');

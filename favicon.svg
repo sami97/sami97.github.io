@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D2137"/>
+      <stop offset="1" stop-color="#0070C0"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#g)"/>
+  <g stroke="#60B4FF" stroke-width="1.2" fill="none" opacity="0.35">
+    <path d="M4 14 H18 V6"/>
+    <path d="M60 50 H46 V58"/>
+    <circle cx="18" cy="14" r="1.6" fill="#60B4FF" stroke="none"/>
+    <circle cx="46" cy="50" r="1.6" fill="#60B4FF" stroke="none"/>
+  </g>
+  <text x="32" y="42" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">SJ</text>
+</svg>
