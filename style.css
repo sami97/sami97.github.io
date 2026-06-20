@@ -16,6 +16,16 @@
   --shadow:  0 1px 3px rgba(15,23,42,.06), 0 4px 16px rgba(15,23,42,.06);
   --shadow-hover: 0 4px 8px rgba(15,23,42,.08), 0 12px 32px rgba(0,112,192,.12);
 }
+/* ── Justify long-form text ──────────────────── */
+.about-card,
+.exp-bullets li,
+.project-desc,
+.pub-desc {
+  text-align: justify;
+  hyphens: auto;
+  text-wrap: pretty;
+}
+
 html { scroll-behavior: smooth; }
 body {
   font-family: 'Inter', system-ui, sans-serif;
@@ -161,6 +171,16 @@ section:nth-child(even) { background: white; }
   letter-spacing: -.5px;
 }
 
+/* ── Hero credibility line ─────────────────── */
+.hero-credibility {
+  font-size: 13px;
+  color: rgba(255,255,255,.5);
+  margin-top: -16px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  letter-spacing: .2px;
+}
+
 /* ── About ─────────────────────────────────── */
 .about-card {
   background: var(--card);
@@ -171,6 +191,47 @@ section:nth-child(even) { background: white; }
   box-shadow: var(--shadow);
   font-size: 15.5px; line-height: 1.8;
   color: var(--body);
+}
+
+/* ── What I Do cards ──────────────────────── */
+.whatido-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.whatido-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: box-shadow .2s, transform .2s;
+}
+.whatido-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.whatido-icon {
+  width: 40px; height: 40px;
+  background: var(--blue-lt);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 12px;
+  color: var(--blue);
+}
+.whatido-title { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 5px; }
+.whatido-desc { font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+
+/* ── Impact badges on experience cards ─────── */
+.impact-badges {
+  display: flex; flex-wrap: wrap; gap: 7px;
+  margin-bottom: 14px;
+}
+.impact-badge {
+  background: var(--blue-lt);
+  border: 1px solid #B9D9F5;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11.5px; font-weight: 600;
+  color: var(--blue-dk);
 }
 
 /* ── Skills ────────────────────────────────── */
