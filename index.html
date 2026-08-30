@@ -407,6 +407,24 @@
     </div>
 
     <div class="project-card">
+      <div class="project-title">Server &amp; Environment Consolidation</div>
+      <div class="project-desc">Consolidated dedicated servers onto right-sized OVH Public Cloud nodes, cutting compute cost ~51% and unlocking cloud-native shelve/unshelve capability unavailable on dedicated hardware. Simplified a Kubernetes control plane after diagnosing an etcd quorum misconfiguration, removing a load-balancer dependency and further lowering control-plane cost.</div>
+      <div class="project-tags">
+        <span class="tag">OVH Public Cloud</span><span class="tag">Kubernetes</span>
+        <span class="tag">Terraform</span><span class="tag">Python</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Weekend Cool-Off Automation for Non-Production Infrastructure</div>
+      <div class="project-desc">Built a Python automation framework to safely stop/start Kubernetes and cloud database resources in dependency-ordered groups, running live, verified delete/recreate cycles against production-equivalent clusters with zero configuration drift. Found and fixed cross-account credential-isolation bugs before either could cause a wrong-environment production action, and delivered independently-verified backup/restore capability as a safety net ahead of live execution.</div>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">AWS EKS/RDS/ElastiCache</span>
+        <span class="tag">OVH API</span>
+      </div>
+    </div>
+
+    <div class="project-card">
       <div class="project-title">Security Compliance &amp; Vulnerability Scanning Automation</div>
       <div class="project-desc">Deployed Wazuh SIEM across Azure VM and Kubernetes environments; integrated Trivy for container image scanning; built automated compliance and vulnerability report generation pipeline. Configured WAF and reverse proxy (Nginx, HAProxy, Traefik) for secure ingress; authored DR plan for cloud-hosted infrastructure.</div>
       <div class="project-tags">
